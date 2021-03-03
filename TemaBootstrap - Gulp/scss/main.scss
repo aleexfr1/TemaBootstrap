@@ -1,0 +1,96 @@
+$primary: rgb(229, 255, 0);
+$color-nav:rgb(255, 255, 255);
+$body-color:#333;
+$bg-nav: #000000;
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+$font-family-sans-serif: 'Calistoga';
+$font-cabeceras:'Courgette', cursive;
+$headings-font-family:$font-cabeceras;
+
+//Navbar
+$navbar-dark-background:            $bg-nav;
+$navbar-dark-color:                 rgba($color-nav, .55);
+$navbar-dark-hover-color:           rgba($color-nav, .75);
+$navbar-dark-active-color:           $color-nav;
+$navbar-dark-disabled-color:        rgba($color-nav, .25);
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border-color:  rgba($color-nav, .1);
+
+
+.navbar{
+    background-color: $navbar-dark-background;
+}
+.nav-link{
+    color: $navbar-dark-color;
+    &:hover{
+        background-color: rgb(7, 104, 160);
+    }
+    &:focus{
+        background-color: rgb(9, 255, 0);
+    }
+    &:disabled{
+        color: $navbar-dark-disabled-color;
+    }
+}
+
+
+    $form-label-color-border:              lighten($primary,50%);
+    $form-label-margin-top:                .5rem ;
+    $form-label-border-width:               0.5rem;
+
+label {
+    margin-top: $form-label-margin-top;
+}
+
+//Card
+$border-color:                rgb(200, 255, 0);
+$border-width:                  .5rem;
+$card-bg: $primary;
+
+$border-radius:               .25rem;
+$border-radius-sm:            .3rem;
+$border-radius-lg:             .5rem;
+
+$card-cap-bg:                       rgba(rgb(0, 0, 0),5 ) ;
+$card-spacer-x:                     1rem;
+.card{
+    border: 0.2rem solid rgba($primary, 0.2);
+    font-size: 1.2rem;
+    &-img{
+        color: rgba($color: #00ff0dfb, $alpha: 2.0);
+    }
+
+    button:focus{
+        background-color: rgba($primary, 0.8);
+    }
+}
+
+$modal-content-color:              color(primary);
+$modal-content-bg:                  $color-nav;
+$modal-content-border-width:        .15rem;
+$modal-content-border-radius:        .15rem;
+
+.modal-footer{
+    button{
+        background-color: $primary;
+        border: none;
+        &:hover{
+            background-color: rgba($primary, 0.5);
+        }
+    }
+}
+
+
+$hr-color: $primary;
+
+
+$form-label-color:  $color-nav;
+
+
+$input-border-color: $primary;
+$input-border-width: 0.2rem;
+$input-color: $bg-nav;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
